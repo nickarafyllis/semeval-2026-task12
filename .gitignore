@@ -1,0 +1,39 @@
+# Credentials
+.env
+.aws/
+.google/
+.openai/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# Data (large generated files)
+data/indices/
+data/processed/
+*.pkl
+*.npy
+*.pt
+
+# Outputs
+experiments/*
+!experiments/test_results/
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

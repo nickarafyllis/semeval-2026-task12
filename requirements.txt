@@ -1,0 +1,30 @@
+# Core dependencies for SemEval 2026 Task 12
+
+# AWS Bedrock (Claude, DeepSeek, Llama models)
+boto3>=1.35.0
+botocore>=1.35.0
+
+# Google Gemini
+google-genai>=1.0.0
+
+# OpenAI
+openai>=1.50.0
+
+# DSPy framework (prompt optimization)
+dspy>=3.0.0
+
+# Data processing
+numpy>=1.26.0
+pandas>=2.0.0
+
+# NLP & Retrieval
+scikit-learn>=1.4.0
+rank-bm25>=0.2.2
+spacy>=3.7.0
+
+# Progress & display
+tqdm>=4.66.0
+rich>=13.0.0
+
+# File locking (for incremental saving)
+filelock>=3.0.0
