@@ -4,7 +4,7 @@
 
 Graph-based retrieval and reflective prompting for abductive event reasoning.
 
-> **Paper:** [AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval and Reflective Prompting for Abductive Event Reasoning](https://arxiv.org/abs/XXXX.XXXXX) — *SemEval 2026*
+> **Paper:** [AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval and Reflective Prompting for Abductive Event Reasoning](https://arxiv.org/abs/2506.06910) — *SemEval 2026*
 
 Given a target event and context documents, the task is to identify which candidate explanations (A–D) are plausible causes — requiring abductive causal reasoning over real-world news events. We propose a three-stage system that combines hybrid graph-based retrieval, LLM-driven reasoning with prompt design informed by reflective prompt evolution (GEPA), and deterministic post-hoc consistency enforcement.
 
@@ -106,15 +106,15 @@ python scripts/list_experiments.py --sort score
 
 ```
                     ┌─────────────────────┐
-                    │  run_experiment.py   │
-                    │  optimize_prompts.py │
-                    │  ensemble.py         │
+                    │  run_experiment.py  │
+                    │  optimize_prompts.py│
+                    │  ensemble.py        │
                     └─────────┬───────────┘
                               │
                     ┌─────────▼───────────┐
-                    │   BaseInference      │  Template Method Pattern
-                    │  (src/inference/     │  Common: retry, caching,
-                    │   base.py)           │  rate limiting, progress
+                    │   BaseInference     │  Template Method Pattern
+                    │  (src/inference/    │  Common: retry, caching,
+                    │   base.py)          │  rate limiting, progress
                     └─────────┬───────────┘
           ┌───────┬───────┬───┴───┬───────┬───────┐
           ▼       ▼       ▼       ▼       ▼       ▼
@@ -179,14 +179,14 @@ Each model implementation inherits from `BaseInference` and overrides only three
 ## Citation
 
 ```bibtex
-@inproceedings{karafyllis-etal-2026-ails-ntua,
-  title     = {{AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval
-                and Reflective Prompting for Abductive Event Reasoning}},
-  author    = {Karafyllis, Nikolas and Voulodimos, Athanasios and Stamou, Giorgos},
-  booktitle = {Proceedings of the 20th International Workshop on Semantic
-               Evaluation (SemEval-2026)},
-  year      = {2026},
-  publisher = {Association for Computational Linguistics}
+@misc{karafyllis2026ailsntuasemeval2026task12,
+      title={AILS-NTUA at SemEval-2026 Task 12: Graph-Based Retrieval and Reflective Prompting for Abductive Event Reasoning}, 
+      author={Nikolas Karafyllis and Maria Lymperaiou and Giorgos Filandrianos and Athanasios Voulodimos and Giorgos Stamou},
+      year={2026},
+      eprint={2603.04319},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.04319}, 
 }
 ```
 
